@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #b3a7a7;
+  color: #1f1e1e;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+pre {
+  background: #111;
+  color: #d4c9c9;
+  padding: 12px;
+  overflow: auto;
+}
