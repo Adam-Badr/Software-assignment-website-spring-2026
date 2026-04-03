@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollabDocs PoC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>CollabDocs PoC</h1>
+
+    <section class="card">
+      <h2>Register</h2>
+      <input id="register-name" placeholder="Name" />
+      <input id="register-email" placeholder="Email" />
+      <input id="register-password" type="password" placeholder="Password" />
+      <button id="register-btn">Register</button>
+    </section>
+
+    <section class="card">
+      <h2>Login</h2>
+      <input id="login-email" placeholder="Email" />
+      <input id="login-password" type="password" placeholder="Password" />
+      <button id="login-btn">Login</button>
+      <p id="auth-status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Create Document</h2>
+      <input id="doc-title" placeholder="Document title" />
+      <button id="create-doc-btn">Create</button>
+    </section>
+
+    <section class="card">
+      <h2>Your Documents</h2>
+      <button id="list-docs-btn">Refresh Documents</button>
+      <ul id="documents-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Editor</h2>
+      <input id="loaded-doc-id" placeholder="Document ID" />
+      <button id="load-doc-btn">Load</button>
+      <input id="editor-title" placeholder="Title" />
+      <textarea id="editor-content" rows="12" placeholder="Document content"></textarea>
+      <button id="save-doc-btn">Save</button>
+      <pre id="document-output"></pre>
+    </section>
+
+    <section class="card">
+      <h2>AI Assistant</h2>
+      <textarea id="ai-selected-text" rows="5" placeholder="Paste selected text here"></textarea>
+      <select id="ai-action">
+        <option value="rewrite">rewrite</option>
+        <option value="summarize">summarize</option>
+        <option value="translate">translate</option>
+        <option value="restructure">restructure</option>
+      </select>
+      <input id="ai-target-language" placeholder="Target language (for translate)" />
+      <button id="ai-invoke-btn">Invoke AI</button>
+      <pre id="ai-output"></pre>
+      <button id="ai-accept-btn" disabled>Accept Suggestion</button>
+      <button id="ai-reject-btn" disabled>Reject Suggestion</button>
+    </section>
+
+    <section class="card">
+      <h2>Last API Response</h2>
+      <pre id="api-output"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
